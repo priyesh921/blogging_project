@@ -1,0 +1,108 @@
+/* 🌌 General Styles (Futuristic & Minimalistic) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #e6edf3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 🚀 Global Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+/* ✏ Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+input, textarea {
+    background-color: #161b22;
+    color: #e6edf3;
+    border: 1px solid #30363d;
+}
+
+button {
+    background: linear-gradient(135deg, #00ffaa, #00aaff);
+    color: #0d1117;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #00aaff, #00ffaa);
+}
+
+/* 🏠 Dashboard Styles */
+h2, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #161b22;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    transition: 0.3s ease;
+}
+
+ul li:hover {
+    border-color: #00ffaa;
+}
+
+ul li h4 {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #00ffaa;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #00aaff;
+}
+
+/* 🏆 Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
