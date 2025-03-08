@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+    /* background: linear-gradient(135deg, #1e1e1e, #222222); */
+    background: transparent;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #00ffcc;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #00cc99;
+}
+
+.features {
+    padding: 40px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background: #000000;
+    margin-top: 40px;
+}
+/* PLANETS CONTAINER */
+.planet-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* GENERAL PLANET STYLES */
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* Individual Planet Styles */
+.planet1 {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ffcc00, #ff6600);
+    top: 10%;
+    left: 20%;
+    animation: orbit1 10s linear infinite;
+}
+
+.planet2 {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #00ccff, #0055ff);
+    top: 50%;
+    left: 60%;
+    animation: orbit2 15s linear infinite;
+}
+
+.planet3 {
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #ff66cc, #9900ff);
+    top: 70%;
+    left: 30%;
+    animation: orbit3 20s linear infinite;
+}
+
+/* Orbit Animations */
+@keyframes orbit1 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(30px, 30px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes orbit2 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-40px, 40px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes orbit3 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(50px, -50px); }
+    100% { transform: translate(0, 0); }
+}

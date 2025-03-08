@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
+<link rel="stylesheet" href="css/style.css">
 <form method="post" enctype="multipart/form-data">
     <input type="text" name="title" value="<?php echo $blog['title']; ?>" required>
     <textarea name="content" required><?php echo $blog['content']; ?></textarea>

@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
+<link rel="stylesheet" href="css/style.css">
 <form method="post" enctype="multipart/form-data">
     <input type="text" name="title" placeholder="Title" required>
     <textarea name="content" placeholder="Content" required></textarea>

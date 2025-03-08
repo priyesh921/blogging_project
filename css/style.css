@@ -106,3 +106,51 @@ a:hover {
         width: 95%;
     }
 }
+Blog Post Styling
+.blog-post {
+    background: #161b22;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+h3 {
+    background: linear-gradient(90deg, #00ffaa, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    margin-top: 15px;
+    color: #00ffaa;
+}
+
+/* Comment Section 
+form textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    background-color: #161b22;
+    color: #e6edf3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #1c2025;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+ul li strong {
+    color: #00ffaa;
+}*/
